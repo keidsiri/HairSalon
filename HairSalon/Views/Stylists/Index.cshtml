@@ -2,7 +2,7 @@
   Layout = "_Layout";
 }
 
-@using Hairsalon.Models;
+@using HairSalon.Models;
 @model List<HairSalon.Models.Stylist>;
 
 <h1>List of Stylists</h1>
@@ -10,7 +10,7 @@
 <ul>
   @foreach(Stylist stylist in Model)
   {
-      <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.stylistId })</li>
+      <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
   }
 </ul>
 
