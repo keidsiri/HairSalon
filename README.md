@@ -1,6 +1,6 @@
 # Eau Claire's Hair Salon
 
-#### An Application . 
+#### An Application that allow the salon's owner to add, edit or delete their stylists and clients to the salon 
 #### Database Basic with C# 
 #### By Kate Kiatsiri
 ---
@@ -11,40 +11,48 @@
 - .Net
 - ASP.NET Core
 - Entity Framework Core
-- MySqlConnector 
+- MySql
+- MySql workbench
 - LINQ
 - Lambda
 
 ## Description
 
-This is the practice lesson of week 10 at Epicodus web application with database for animal shelter to track animals in thier facility based on the animal type (such as cat or dog). Build out features that let a shelter worker:
+This is an independent project week 10th at Epicodus creating the web application that allow the user to create and modify the list of their hair stylists and each of their clients. This project is created to practice with one to many relationship in ASP.NET Core MVC, Entity Core Framework, and MySql.
 
-* Add types of animals to the system. type should be a column on the animals table. A type could be a cat, dog, bunny or any other animal.
-* Add an animal to the system. An animal should have a name, gender, date of admittance, and breed. When it gets added to the system, it should be added as a particular type.
-* List animals by breed or type alphabetically.
-* List animals starting with the ones who have been in the shelter the longest.
+User Stories
+As the salon owner, I need to be able to see a list of all stylists.
+As the salon owner, I need to be able to select a stylist, see their details, and see a list of all clients that belong to that stylist.
+As the salon owner, I need to add new stylists to our system when they are hired.
+As the salon owner, I need to be able to add new clients to a specific stylist. I should not be able to add a client if no stylists have been added.
 
-## Setup & Installation Instructions
+## Setup & Technology requirements 
 
-* `$ dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0`
-* `$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2`
-* `$ dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0`
+* Text Editor such as <a href="https://code.visualstudio.com"> VS Code </a>
+* Install <a href="https://dotnet.microsoft.com/en-us/download/dotnet/5.0"> .NET 5</a>
+* Set up <a href="https://dev.mysql.com/downloads/file/?id=484391"> MySql Workbench </a>
 
 
-1. dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0
-2. dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2
-3. Clone github repository to local machine in desired directory <a href="https://github.com/JeffTerrell/animal-shelter-csharp"> Click here! </a>
-4. Create .gitignore file in root directory add `*/appsettings.json` to the file
-4. Create file appsettings.json in root directory in the project and add the code below and change the database to animal_shelter
+## Installation Instructions
+
+* Clone github repository to local machine in desired directory <a href="https://github.com/keidsiri/HairSalon"> Click here! </a>
+*  In the terminal navigate to HairSalon.Solutions/HairSalon directory and run the following commands:
+    * `$ dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0`
+    * `$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2`
+    * `$ dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0`
+
+*  Create .gitignore file in root directory add `*/appsettings.json` `*/bin/` `*/obj/` to the file
+* Create file appsettings.json in HairSalon directory and add the following code to the appsettings.json file
 ```{
     "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=to_do_list;uid=root;pwd=[YOUR-PASSWORD-HERE];"
+        "DefaultConnection": "Server=localhost;Port=3306;database=kate_kiatsiri;uid=root;pwd=[YOUR-PASSWORD-HERE];"
     }
 }
 ```
-5. In the terminal open the directory,navigate to directory `AnimalShelter.Solution/AnimalShelter` run the command `$ dotnet restore` to create obj and bin directories
+* Replace your database name and password with your unique MySql password.
+5. In the terminal open the directory,navigate to directory `HairSalon.Solution/HairSalon` run the command `$ dotnet restore` to create obj and bin directories
 6. Run the command `$ dotnet build` to build and compile the project
-7. To run the console application navigate to `AnimalShelter.Solution/AnimalShelter` folder in the terminal , and run the command `dotnet run` to see the web application.
+7. To run the console application run the command `dotnet run` to see the web application.
 
 
 
