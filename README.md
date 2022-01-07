@@ -35,6 +35,8 @@ As the salon owner, I need to be able to add new clients to a specific stylist. 
 
 ## Installation Instructions
 
+![Alt text](HairSalon/wwwroot/img/sql.jpg?raw=true "Title")
+
 * Clone github repository to local machine in desired directory <a href="https://github.com/keidsiri/HairSalon"> Click here! </a>
 *  In the terminal navigate to HairSalon.Solutions/HairSalon directory and run the following commands:
     * `$ dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0`
