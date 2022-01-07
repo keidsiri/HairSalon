@@ -32,6 +32,21 @@ As the salon owner, I need to be able to add new clients to a specific stylist. 
 * Install <a href="https://dotnet.microsoft.com/en-us/download/dotnet/5.0"> .NET 5</a>
 * Set up <a href="https://dev.mysql.com/downloads/file/?id=484391"> MySql Workbench </a>
 
+## Database Setup
+
+* _Download MySQL and MySQL Workbench to set up a local database_
+
+* _Once installed, open MyMql Workbench and open a local server_
+
+* _In the Navigator, select the Administration tab and then select Data Import/Restore_
+
+* _Under Import Options, select Import From Self-Contained File, and then select the "kate_kiatsiri.sql" file which can be found in HairSalon.Solution_
+
+* _In the Default Schema to be Imported To option, select New_
+
+* _Enter a name for your database and select OK_
+
+* _Click Start Import to begin database import_
 
 ## Installation Instructions
 
